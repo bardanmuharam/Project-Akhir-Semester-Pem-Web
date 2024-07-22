@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: #080808de;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ffffffe0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+h2 {
+    color: #e00a0ade;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h3 {
+    color: #e00a0ade;
+    text-align: center;
+}
+
+footer {
+    font-family: sans-serif;
+    padding: 10px;
+    color: white;
+    background-color: #ad0000de;
+    text-align: center;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%; 
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.jumbotron {
+    padding: 50px;
+    background-color: #ad0000de;
+    font-size: 18px;
+    text-align: justify;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap; 
+}
+
+#content {
+    flex: 3;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}
+
+header {
+    display: block;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-direction: column;
+    }
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        padding-inline: 1rem;
+    }
+    main aside {
+        align-self: stretch;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+#content article p {
+    text-align: justify;
+}
+
+
+audio {
+    margin-top: 10px;
+    width: 100%; 
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer a {
+    color: white; 
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0; 
+    padding: 10px;
+}
